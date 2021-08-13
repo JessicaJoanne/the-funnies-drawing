@@ -139,6 +139,11 @@ namespace draw_my_thing
             this.Cursor = Cursors.Default;
         }
 
+        private void fill_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if ((ModifierKeys & Keys.Control) == Keys.Control) ctrlPressed = true;

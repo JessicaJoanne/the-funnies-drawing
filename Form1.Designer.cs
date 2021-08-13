@@ -75,6 +75,7 @@ namespace draw_my_thing
             this.thinest = new System.Windows.Forms.PictureBox();
             this.clear = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.fill = new System.Windows.Forms.PictureBox();
             this.undo = new System.Windows.Forms.PictureBox();
             this.canvas = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
@@ -122,6 +123,7 @@ namespace draw_my_thing
             ((System.ComponentModel.ISupportInitialize)(this.thinest)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clear)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.undo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.canvas)).BeginInit();
             this.SuspendLayout();
@@ -492,7 +494,7 @@ namespace draw_my_thing
             // 
             // dark_orange
             // 
-            this.dark_orange.BackColor = System.Drawing.Color.SaddleBrown;
+            this.dark_orange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(54)))), ((int)(((byte)(8)))));
             this.dark_orange.Location = new System.Drawing.Point(35, 3);
             this.dark_orange.Name = "dark_orange";
             this.dark_orange.Size = new System.Drawing.Size(26, 26);
@@ -522,7 +524,7 @@ namespace draw_my_thing
             // 
             // dark_red
             // 
-            this.dark_red.BackColor = System.Drawing.Color.Maroon;
+            this.dark_red.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(39)))), ((int)(((byte)(7)))));
             this.dark_red.Location = new System.Drawing.Point(3, 3);
             this.dark_red.Name = "dark_red";
             this.dark_red.Size = new System.Drawing.Size(26, 26);
@@ -618,14 +620,27 @@ namespace draw_my_thing
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel1.Controls.Add(this.fill);
             this.panel1.Controls.Add(this.undo);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.clear);
-            this.panel1.Location = new System.Drawing.Point(437, 753);
+            this.panel1.Location = new System.Drawing.Point(415, 753);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(687, 98);
+            this.panel1.Size = new System.Drawing.Size(735, 98);
             this.panel1.TabIndex = 43;
+            // 
+            // fill
+            // 
+            this.fill.BackColor = System.Drawing.Color.Transparent;
+            this.fill.BackgroundImage = global::draw_my_thing.Properties.Resources.paint_bucket;
+            this.fill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fill.Location = new System.Drawing.Point(689, 30);
+            this.fill.Name = "fill";
+            this.fill.Size = new System.Drawing.Size(39, 36);
+            this.fill.TabIndex = 44;
+            this.fill.TabStop = false;
+            this.fill.Click += new System.EventHandler(this.fill_Click);
             // 
             // undo
             // 
@@ -713,6 +728,7 @@ namespace draw_my_thing
             ((System.ComponentModel.ISupportInitialize)(this.thinest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clear)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.undo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.canvas)).EndInit();
             this.ResumeLayout(false);
@@ -767,6 +783,7 @@ namespace draw_my_thing
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox canvas;
         private System.Windows.Forms.PictureBox undo;
+        private System.Windows.Forms.PictureBox fill;
     }
 }
 

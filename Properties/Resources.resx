@@ -118,20 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="3p1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3p1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="7p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="15p1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\15p1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="9p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="11pixel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\11pixel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="7p1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7p1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="30pixel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\30pixel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="12p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\12p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -141,6 +141,9 @@
   </data>
   <data name="30p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\30p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="15p2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\15p2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reply-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reply-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,8 +166,8 @@
   <data name="3p2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3p2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="9p" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="15p1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\15p1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,13 +181,13 @@
   <data name="5p" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="15p2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\15p2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3p1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3p1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="15pixel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\15pixel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="30pixel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\30pixel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="paint bucket" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\netcoreapp3.1\Resources\paint bucket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

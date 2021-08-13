@@ -283,6 +283,16 @@ namespace draw_my_thing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap paint_bucket {
+            get {
+                object obj = ResourceManager.GetObject("paint bucket", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reply_arrow {
             get {
                 object obj = ResourceManager.GetObject("reply-arrow", resourceCulture);
