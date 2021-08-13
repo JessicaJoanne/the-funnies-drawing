@@ -384,7 +384,7 @@ namespace draw_my_thing
             // 
             // light_green
             // 
-            this.light_green.BackColor = System.Drawing.Color.LawnGreen;
+            this.light_green.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(181)))), ((int)(((byte)(29)))));
             this.light_green.Location = new System.Drawing.Point(131, 67);
             this.light_green.Name = "light_green";
             this.light_green.Size = new System.Drawing.Size(26, 26);
@@ -404,7 +404,7 @@ namespace draw_my_thing
             // 
             // dark_green
             // 
-            this.dark_green.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.dark_green.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(46)))), ((int)(((byte)(21)))));
             this.dark_green.Location = new System.Drawing.Point(131, 3);
             this.dark_green.Name = "dark_green";
             this.dark_green.Size = new System.Drawing.Size(26, 26);
@@ -414,7 +414,7 @@ namespace draw_my_thing
             // 
             // light_lime
             // 
-            this.light_lime.BackColor = System.Drawing.Color.PaleGreen;
+            this.light_lime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.light_lime.Location = new System.Drawing.Point(99, 67);
             this.light_lime.Name = "light_lime";
             this.light_lime.Size = new System.Drawing.Size(26, 26);
@@ -434,7 +434,7 @@ namespace draw_my_thing
             // 
             // dark_lime
             // 
-            this.dark_lime.BackColor = System.Drawing.Color.OliveDrab;
+            this.dark_lime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(74)))), ((int)(((byte)(18)))));
             this.dark_lime.Location = new System.Drawing.Point(99, 3);
             this.dark_lime.Name = "dark_lime";
             this.dark_lime.Size = new System.Drawing.Size(26, 26);
@@ -464,7 +464,7 @@ namespace draw_my_thing
             // 
             // dark_yellow
             // 
-            this.dark_yellow.BackColor = System.Drawing.Color.DarkKhaki;
+            this.dark_yellow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(87)))), ((int)(((byte)(18)))));
             this.dark_yellow.Location = new System.Drawing.Point(67, 3);
             this.dark_yellow.Name = "dark_yellow";
             this.dark_yellow.Size = new System.Drawing.Size(26, 26);
