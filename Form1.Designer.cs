@@ -284,7 +284,7 @@ namespace draw_my_thing
             // 
             // dark_magenta
             // 
-            this.dark_magenta.BackColor = System.Drawing.Color.Purple;
+            this.dark_magenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(6)))), ((int)(((byte)(69)))));
             this.dark_magenta.Location = new System.Drawing.Point(259, 3);
             this.dark_magenta.Name = "dark_magenta";
             this.dark_magenta.Size = new System.Drawing.Size(26, 26);

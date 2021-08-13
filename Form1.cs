@@ -17,7 +17,7 @@ namespace draw_my_thing
     {
         Graphics graphics;
         Stack<Bitmap> states = new Stack<Bitmap>();
-        Boolean cursorMoving = false, ctrlPressed = false, zPressed = false;
+        Boolean cursorMoving = false, ctrlPressed = false, zPressed = false, isFilling = false;
         Pen cursorPen;
         int cursorX = -1, cursorY = -1;
         Bitmap drawing;
@@ -47,12 +47,18 @@ namespace draw_my_thing
 
         }
 
+        private void fillArea(int x, int y, Color color)
+        {
+            MessageBox.Show(color.Name, "lol", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         private void canvas_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
             {
-                
-            } else
+
+            }
+            else if (!isFilling)
             {
                 states.Push(drawing.Clone(new Rectangle(0, 0, 1443, 682), drawing.PixelFormat));
                 cursorMoving = true;
@@ -63,6 +69,7 @@ namespace draw_my_thing
                     graphics.DrawLine(cursorPen, new Point(cursorX - 1, cursorY), e.Location);
                 canvas.Refresh();
             }
+            else if (isFilling) fillArea(e.X, e.Y, drawing.GetPixel(e.X, e.Y));
 
         }
 
@@ -90,30 +97,35 @@ namespace draw_my_thing
         {
             cursorPen.Width = 30;
             brushWidth = 30;
+            isFilling = false;
         }
 
         private void thicker_Click(object sender, EventArgs e)
         {
             cursorPen.Width = 15;
             brushWidth = 15;
+            isFilling = false;
         }
 
         private void normal_Click(object sender, EventArgs e)
         {
             cursorPen.Width = 11;
             brushWidth = 11;
+            isFilling = false;
         }
 
         private void thinner_Click(object sender, EventArgs e)
         {
             cursorPen.Width = 7;
             brushWidth = 7;
+            isFilling = false;
         }
 
         private void thinest_Click(object sender, EventArgs e)
         {
             cursorPen.Width = 3;
             brushWidth = 3;
+            isFilling = false;
         }
 
         private void clear_Click(object sender, EventArgs e)
@@ -141,7 +153,8 @@ namespace draw_my_thing
 
         private void fill_Click(object sender, EventArgs e)
         {
-
+            isFilling = true;
+            //this.Cursor = new Cursor(Application.StartupPath + "\\paint bucket.ico");
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
