@@ -49,7 +49,22 @@ namespace draw_my_thing
 
         private void fillArea(int x, int y, Color color)
         {
-            MessageBox.Show(color.Name, "lol", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (x > 1 && y>1 && x<1443 && y<682 && drawing.GetPixel(x, y).Name == color.Name) 
+            {
+                drawing.SetPixel(x, y, cursorPen.Color);
+                if (x >= 0 && x-1 < Width && y >= 0)
+                {
+                    if (drawing.GetPixel(x + 1, y).Name == color.Name)
+                        fillArea(x + 1, y, color);
+                    if (drawing.GetPixel(x, y + 1).Name == color.Name)
+                        fillArea(x, y + 1, color);
+                    if (drawing.GetPixel(x - 1, y).Name == color.Name)
+                        fillArea(x - 1, y, color);
+                    if (drawing.GetPixel(x, y - 1).Name == color.Name)
+                        fillArea(x, y - 1, color);
+                }
+            }
+
         }
 
         private void canvas_MouseDown(object sender, MouseEventArgs e)
@@ -69,9 +84,13 @@ namespace draw_my_thing
                     graphics.DrawLine(cursorPen, new Point(cursorX - 1, cursorY), e.Location);
                 canvas.Refresh();
             }
-            else if (isFilling) fillArea(e.X, e.Y, drawing.GetPixel(e.X, e.Y));
-
+            else if (isFilling)
+            {
+                fillArea(e.X, e.Y, drawing.GetPixel(e.X, e.Y));
+                canvas.Refresh();
+            }
         }
+
 
         private void canvas_MouseUp(object sender, MouseEventArgs e)
         {
