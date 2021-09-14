@@ -49,18 +49,19 @@ namespace draw_my_thing
 
         private void fillArea(int x, int y, Color color)
         {
-            if (x > 1 && y>1 && x<1443 && y<682 && drawing.GetPixel(x, y).Name == color.Name) 
+            if (x > 1 && y>1 && x-2<1443 && y-2<682 && drawing.GetPixel(x, y).Name == color.Name) 
             {
                 drawing.SetPixel(x, y, cursorPen.Color);
-                if (x >= 0 && x-1 < Width && y >= 0)
+                if (x >= 0 && x-2 < 1443 && y >= 0 && y-2 < 682)
                 {
-                    if (drawing.GetPixel(x + 1, y).Name == color.Name)
+                    System.Diagnostics.Debug.WriteLine(x);
+                    if (x >= 0 && x - 2 < 1443 && y >= 0 && y - 1 < 682 && drawing.GetPixel(x + 1, y).Name == color.Name)
                         fillArea(x + 1, y, color);
-                    if (drawing.GetPixel(x, y + 1).Name == color.Name)
+                    if (x >= 0 && x - 1 < 1443 && y >= 0 && y - 1 < 682 && drawing.GetPixel(x, y + 1).Name == color.Name)
                         fillArea(x, y + 1, color);
-                    if (drawing.GetPixel(x - 1, y).Name == color.Name)
+                    if (x >= 0 && x - 1 < 1443 && y >= 0 && y - 1 < 682 && drawing.GetPixel(x - 1, y).Name == color.Name)
                         fillArea(x - 1, y, color);
-                    if (drawing.GetPixel(x, y - 1).Name == color.Name)
+                    if (x >= 0 && x - 1 < 1443 && y >= 0 && y - 1 < 682 && drawing.GetPixel(x, y - 1).Name == color.Name)
                         fillArea(x, y - 1, color);
                 }
             }
